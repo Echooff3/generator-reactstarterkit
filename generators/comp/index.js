@@ -15,17 +15,17 @@ module.exports = yeoman.generators.Base.extend({
   writing: function () {
     this.fs.copyTpl(
       this.templatePath('comp.js'),
-      this.destinationPath('component/' + this.name + '/' + this.name + '.js'),
+      this.destinationPath('components/' + this.name + '/' + this.name + '.js'),
       { comp: this.name }
     );
     this.fs.copyTpl(
       this.templatePath('comp.less'),
-      this.destinationPath('component/' + this.name + '/' + this.name + '.less'),
+      this.destinationPath('components/' + this.name + '/' + this.name + '.less'),
       { comp: this.name }
     );
     this.fs.copyTpl(
       this.templatePath('comp.json'),
-      this.destinationPath('component/' + this.name + '/package.json'),
+      this.destinationPath('components/' + this.name + '/package.json'),
       { comp: this.name }
     );
   }
