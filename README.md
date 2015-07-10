@@ -10,9 +10,14 @@ yo reactstarterkit:comp NAME
 Creates a component with the given NAME. 
 
 `src/`
+
 `├── components`
+
 `│   ├── NAME`
+
 `│   │   ├── NAME.js`
+
 `│   │   ├── NAME.less`
+
 `│   │   └── package.json`
 
